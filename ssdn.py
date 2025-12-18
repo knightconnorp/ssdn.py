@@ -26,7 +26,7 @@ def highlight_file(filepath):
             else:
                 return '\n'.join(items)
     except PermissionError as e:
-        return "Insufficient"
+        return "Insufficient Permissions"
     except Exception as e:
         return "Error displaying file content."
 
